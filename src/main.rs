@@ -5,6 +5,7 @@ use std::env;
 mod day01;
 mod day02;
 mod day03;
+mod day04;
 
 pub fn main() {
     if let Some(day) = env::args().nth(1) {
@@ -12,6 +13,7 @@ pub fn main() {
             "01" => day01::main(),
             "02" => day02::main(),
             "03" => day03::main(),
+            "04" => day04::main(),
             _ => {
                 panic!("invalid argument for \"day\": {}", day)
             }
@@ -20,5 +22,6 @@ pub fn main() {
         day01::main();
         day02::main();
         day03::main();
+        day04::main();
     }
 }
